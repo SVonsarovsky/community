@@ -127,7 +127,7 @@ describe PostsController do
 
       it 'redirects to post page' do
         process :create, 'POST', post: post_params
-        post.attributes[:id] = 1
+        #post.attributes[:id] = 1
         expect(response).to redirect_to post
       end
 
