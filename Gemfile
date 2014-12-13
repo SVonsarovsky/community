@@ -36,17 +36,19 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
+gem 'devise'
 gem 'execjs'
 gem 'therubyracer'
 
 group :development, :test do
   gem 'rspec-rails'
   gem 'rspec-xml'
+  gem 'rspec-activemodel-mocks'
   gem 'factory_girl_rails'
 end
 
 group :test do
+  gem 'capybara'
   gem 'faker'
   gem 'database_cleaner'
   gem 'shoulda-matchers'

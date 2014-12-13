@@ -9,4 +9,7 @@ module PostsHelper
     title = title.slice(0, 7).concat('...') if title.length > 10
     title
   end
+  def post_title(post)
+    post.title
+  end
 end
